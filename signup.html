@@ -1,0 +1,62 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+<style type="text/css">
+	.style{
+		color: white;
+		font-size: 20px;
+	}
+	.button{
+		display: block;
+		border: 1px solid black;
+		padding: 14px 16px;
+        text-decoration: none;
+        background-color: #b3b3b3;
+        box-shadow: 10px 10px 5px #4d4d4d;
+        margin-top: 20px; 
+	}
+	.button:hover{
+		font-size: 22px;
+		background-color: #004080;
+		color: white;
+	}
+	.a{
+		background-color: black;
+		width: 500px;
+		height: vh;
+		box-shadow: 10px 10px 5px #4d4d4d; 
+		margin-left: 80px;
+		padding-bottom: 50px;
+		padding-top: -40px;
+
+	}
+</style>
+</head>
+<body  style="background-image: url(images/ass.jpg); background-size:100% ;background-repeat: no-repeat;">
+
+	<p style="text-shadow: 1px 1px 20px #1B1464" align="center"><font size="7" color="white" face="Ink Free" >SIGN UP FORM</font></p> 
+		<form onSubmit="return func()" id="form">
+	<center><b>
+		<div class="a">
+	<table class="bg">
+	<tr><td  align="left"><b class="style">Name:</b></td><td><input type="text" size="20" maxlength="100" name="name" placeholder="Full Name" required></td></tr>
+	<tr><td  align="left"><b class="style">Address:</td><td><textarea></textarea></td></tr>
+	<tr><td  align="left"><b class="style">Date of Birth:</b></td><td><input type="date" required>
+	</td></tr><br>
+	<tr><td  align="left"><b class="style">Profile Picture:</td><td colspan="2" align="center"><input type="file" name="uploadField"/></td></tr>
+	<tr><td  align="left"><b class="style">Gender:</b></td><td><input type="radio"  style="text-decoration:none;"><span style=" color:#808080;font-size: 20px;">Male</span> <input type="radio" name="g"><span style=" color:#808080;font-size: 20px;">Female</span> <input type="radio" name="g"><span style=" color:#808080;font-size: 20px;">Other</span></td></tr><br>
+	<tr><td  align="left"><b class="style">Country:</b></td><td><select>
+	<option selected>-country-</option>
+	<option>India</option><option>England</option><option>Argentina</option><option>Austrailia</option><option>Indonesia</option><option>China</option></select></td></tr>
+	
+	<tr><td  align="left"><b class="style">Email-id:</b></td><td><input type="text" id="email"
+	required></td></tr>
+	<tr><td colspan="2" align="center"><input style=""type="reset" value="RESET"> <input type="submit" value="SIGN UP"></td></tr>
+	<tr><td colspan="2"><center><a href="login.html"><font class="button"color="#004080" size="4"> Already registered?Login. </a></td></tr></center>
+	</table>
+	</form>
+</div>	
+<script src="signup.js">
+</script>
+</body>	
+</html>
